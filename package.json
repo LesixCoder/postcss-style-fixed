@@ -1,7 +1,7 @@
 {
   "name": "postcss-style-fixes",
   "description": "",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "liusixin <lsixincoder@gmail.com>",
   "license": "MIT",
   "main": "./dist/plugin.cjs",

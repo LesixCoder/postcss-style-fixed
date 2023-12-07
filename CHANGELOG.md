@@ -1,4 +1,10 @@
-# postcss-antd-fixes
+# postcss-style-fixes
+
+## 0.1.1
+
+### Patch Changes
+
+- rename plugin name
 
 ## 0.2.0
 

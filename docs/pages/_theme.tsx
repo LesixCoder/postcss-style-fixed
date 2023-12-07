@@ -1,6 +1,6 @@
-import './global.css'
 import React from 'react'
 import { createTheme, defaultSideNavs } from 'vite-pages-theme-doc'
+import './global.css'
 
 import Component404 from './404'
 
@@ -10,11 +10,11 @@ const theme: Theme = (props) => {
   const { loadedData, loadState } = props
 
   const DocTheme = createTheme({
-    logo: <div style={{ fontSize: '20px' }}>postcss-antd-fixes</div>,
+    logo: <div style={{ fontSize: '20px' }}>postcss-style-fixes</div>,
     topNavs: [
       {
-        label: 'postcss-antd-fixes',
-        href: 'https://github.com/yunsii/postcss-antd-fixes',
+        label: 'postcss-style-fixes',
+        href: 'https://github.com/yunsii/postcss-style-fixes',
       },
     ],
     sideNavs: (ctx) => {

@@ -12,13 +12,17 @@ PostCSS plugin tries to fix all issues about [antd](https://www.npmjs.com/packag
 
 ## Usage
 
+```bash
+npm install postcss-style-fixes --save-dev
+```
+
 ```js
 // postcss.config.js
 module.exports = {
   plugins: {
     'tailwindcss': {},
     'autoprefixer': {},
-    'postcss-antd-fixes': {
+    'postcss-style-fixes': {
       // Support multiple prefixes, if you do not custom antd class name prefix, it's not necessary option.
       prefixes: ['ant'],
     },

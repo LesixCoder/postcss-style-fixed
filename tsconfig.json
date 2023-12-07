@@ -21,7 +21,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "postcss-antd-fixes": ["./src"]
+      "postcss-style-fixes": ["./src"]
     }
   },
   "include": ["src"],

@@ -25,7 +25,7 @@ const plugin: PluginCreator<PluginOptions> = (options) => {
   })
 
   return {
-    postcssPlugin: 'postcss-antd-fixes',
+    postcssPlugin: 'postcss-style-fixes',
     Once: (root) => {
       fixes
         .filter((item) => {
