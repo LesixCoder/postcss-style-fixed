@@ -1,6 +1,6 @@
-# postcss-antd-fixes
+# postcss-style-fixes
 
-[![NPM version](https://img.shields.io/npm/v/postcss-antd-fixes?color=a1b858&label=)](https://www.npmjs.com/package/postcss-antd-fixes) [![Download monthly](https://img.shields.io/npm/dm/postcss-antd-fixes.svg)](https://www.npmjs.com/package/postcss-antd-fixes)
+[![NPM version](https://img.shields.io/npm/v/postcss-style-fixes?color=a1b858&label=)](https://www.npmjs.com/package/postcss-style-fixes) [![Download monthly](https://img.shields.io/npm/dm/postcss-style-fixes.svg)](https://www.npmjs.com/package/postcss-style-fixes)
 
 PostCSS plugin tries to fix all issues about [antd](https://www.npmjs.com/package/antd) with any others global CSS reset
 
@@ -20,7 +20,7 @@ module.exports = {
     'autoprefixer': {},
     'postcss-antd-fixes': {
       // Support multiple prefixes, if you do not custom antd class name prefix, it's not necessary option.
-      prefixes: ['vp-antd', 'ant'],
+      prefixes: ['ant'],
     },
   },
 }
@@ -42,10 +42,10 @@ button,
 
 /* => */
 
-button:where(:not([class^='ant'])),
-[type='button']:where(:not([class^='ant'])),
-[type='reset']:where(:not([class^='ant'])),
-[type='submit']:where(:not([class^='ant'])) {
+button:where(:not([class*='ant'])),
+[type='button']:where(:not([class*='ant'])),
+[type='reset']:where(:not([class*='ant'])),
+[type='submit']:where(:not([class*='ant'])) {
   -webkit-appearance: button; /* 1 */
   background-color: transparent; /* 2 */
   background-image: none; /* 2 */
@@ -55,7 +55,7 @@ button:where(:not([class^='ant'])),
 ### Add `anchor` styles
 
 ```css
-:where([class^='ant']) a {
+:where([class*='ant']) a {
   /* colorPrimary */
   color: #1677ff;
   text-decoration: none;
@@ -75,4 +75,4 @@ button:where(:not([class^='ant'])),
 
 ## License
 
-[MIT](./LICENSE) License © 2023 [Yuns](https://github.com/yunsii)
+[MIT](./LICENSE) License © 2023 [Yuns](https://github.com/LesixCoder)

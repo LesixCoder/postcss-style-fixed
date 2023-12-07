@@ -2,7 +2,7 @@
   "name": "postcss-antd-fixes",
   "description": "",
   "version": "0.2.0",
-  "author": "Yuns <yuns.xie@qq.com>",
+  "author": "liusixin <lsixincoder@gmail.com>",
   "license": "MIT",
   "main": "./dist/plugin.cjs",
   "module": "./dist/plugin.mjs",
@@ -19,15 +19,14 @@
     "tailwindcss"
   ],
   "funding": [
-    "https://opencollective.com/yuns",
-    "https://afdian.net/@yunslove"
+    "https://github.com/LesixCoder"
   ],
-  "homepage": "https://github.com/yunsii/postcss-antd-fixes#readme",
+  "homepage": "https://github.com/LesixCoder/postcss-style-fixed#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yunsii/postcss-antd-fixes"
+    "url": "https://github.com/LesixCoder/postcss-style-fixed"
   },
-  "bugs": "https://github.com/yunsii/postcss-antd-fixes/issues",
+  "bugs": "https://github.com/LesixCoder/postcss-style-fixed/issues",
   "scripts": {
     "dev": "vite --config vite.docs.config.ts --force",
     "build:docs": "tsc && vite build --config vite.docs.config.ts",

@@ -1,5 +1,5 @@
-import type { PluginOptions, PrefixItem } from './types'
 import type { Rule } from 'postcss'
+import type { PluginOptions, PrefixItem } from './types'
 
 export interface Options {
   processedPrefixes: PrefixItem[]
@@ -21,7 +21,7 @@ export function defineFix(options: DefineFixOptions) {
 
 export function getAntdSelectors(prefixClsArr: string[]) {
   return prefixClsArr.map((item) => {
-    return `[class^="${item}"]`
+    return `[class*="${item}"]`
   })
 }
 
